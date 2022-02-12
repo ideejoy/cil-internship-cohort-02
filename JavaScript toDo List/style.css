@@ -1,0 +1,106 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #4FF663,
+        #04500D
+    
+    );
+}
+.container{
+   border: 2px solid white;
+   width: 40%;
+   min-width: 450px;
+   position: absolute; 
+   transform: translate(-50%,-50%);
+   top: 50%;
+   left: 50%;
+   padding: 30px 40px;
+
+}
+#newTask{
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 5px 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+#newTask input{
+    position: relative;
+    width: 70%;
+    width: 70%;
+    height: 45px;
+    font-family: 'popipns', sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+
+}
+#newTask input:focus{
+    outline: none;
+    border-color: #4FF663;
+
+}
+#newTask button{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'popipns', sans-serif;
+    font-weight: 500;
+    background-color: #4FF663;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+#tasks{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
+}
+.jTask{
+    background-color: #ffffff;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10p;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+.jTask span{
+    font-family: 'popipns', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+.jTask button{
+    background-color: #4FF663;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+
+}
+.completed{
+    text-decoration: line-through;
+}
